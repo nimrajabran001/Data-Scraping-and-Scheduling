@@ -1,0 +1,129 @@
+2026-06-29 18:07:55,003 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-29 18:07:55,006 - INFO - Added job "job" to job store "default"
+2026-06-29 18:07:55,006 - INFO - Scheduler started
+2026-06-29 18:08:55,006 - INFO - Running job "job (trigger: interval[0:01:00], next run at: 2026-06-29 18:08:55 PKT)" (scheduled at 2026-06-29 18:08:55.003406+05:00)
+2026-06-29 18:08:55,007 - INFO - Scraper started
+2026-06-29 18:08:55,041 - INFO - ====== WebDriver manager ======
+2026-06-29 18:08:57,970 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:09:37,174 - INFO - Scraper finished successfully
+2026-06-29 18:09:37,176 - INFO - Job "job (trigger: interval[0:01:00], next run at: 2026-06-29 18:09:55 PKT)" executed successfully
+2026-06-29 18:09:55,018 - INFO - Running job "job (trigger: interval[0:01:00], next run at: 2026-06-29 18:10:55 PKT)" (scheduled at 2026-06-29 18:09:55.003406+05:00)
+2026-06-29 18:09:55,018 - INFO - Scraper started
+2026-06-29 18:09:55,020 - INFO - ====== WebDriver manager ======
+2026-06-29 18:09:57,902 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:10:25,228 - INFO - Scraper finished successfully
+2026-06-29 18:10:25,228 - INFO - Job "job (trigger: interval[0:01:00], next run at: 2026-06-29 18:10:55 PKT)" executed successfully
+2026-06-29 18:10:55,009 - INFO - Running job "job (trigger: interval[0:01:00], next run at: 2026-06-29 18:11:55 PKT)" (scheduled at 2026-06-29 18:10:55.003406+05:00)
+2026-06-29 18:10:55,009 - INFO - Scraper started
+2026-06-29 18:10:55,009 - INFO - ====== WebDriver manager ======
+2026-06-29 18:10:57,686 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:11:03,353 - ERROR - Scraper failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff616a93fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff616a94000+14980]
+	chromedriver!(No symbol) [0x7ff6165d793d]
+	chromedriver!(No symbol) [0x7ff6165ae362]
+	chromedriver!(No symbol) [0x7ff616661846]
+	chromedriver!(No symbol) [0x7ff61667ec82]
+	chromedriver!(No symbol) [0x7ff61662401c]
+	chromedriver!(No symbol) [0x7ff616624f43]
+	chromedriver!GetHandleVerifier [0x7ff617077591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff617071902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff617097115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff616ab1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff616aba82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff616a9d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff616a9d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff616a81447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa0a6f7374+14]
+	ntdll!RtlUserThreadStart [0x7ffa0a83cc91+21]
+
+2026-06-29 18:11:03,353 - INFO - Job "job (trigger: interval[0:01:00], next run at: 2026-06-29 18:11:55 PKT)" executed successfully
+2026-06-29 18:12:41,979 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-29 18:12:41,982 - INFO - Added job "job" to job store "default"
+2026-06-29 18:12:41,982 - INFO - Scheduler started
+2026-06-29 18:20:30,948 - INFO - ====== WebDriver manager ======
+2026-06-29 18:20:33,438 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:20:55,925 - INFO - Scraped successfully. New: 0 Total: 25
+2026-06-29 18:22:04,146 - INFO - ====== WebDriver manager ======
+2026-06-29 18:22:06,434 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:22:29,310 - ERROR - Scraper failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:41:41,587 - INFO - ====== WebDriver manager ======
+2026-06-29 18:41:44,536 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:41:48,649 - ERROR - Scraper failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff616a93fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff616a94000+14980]
+	chromedriver!(No symbol) [0x7ff6165d793d]
+	chromedriver!(No symbol) [0x7ff6165ae362]
+	chromedriver!(No symbol) [0x7ff616661846]
+	chromedriver!(No symbol) [0x7ff61667ec82]
+	chromedriver!(No symbol) [0x7ff61662401c]
+	chromedriver!(No symbol) [0x7ff616624f43]
+	chromedriver!GetHandleVerifier [0x7ff617077591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff617071902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff617097115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff616ab1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff616aba82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff616a9d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff616a9d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff616a81447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa0a6f7374+14]
+	ntdll!RtlUserThreadStart [0x7ffa0a83cc91+21]
+
+2026-06-29 18:48:29,300 - INFO - ====== WebDriver manager ======
+2026-06-29 18:48:31,952 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 18:48:33,363 - ERROR - Scraper failed: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff616a93fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff616a94000+14980]
+	chromedriver!(No symbol) [0x7ff6165d793d]
+	chromedriver!(No symbol) [0x7ff6165d44ce]
+	chromedriver!(No symbol) [0x7ff6165c4711]
+	chromedriver!(No symbol) [0x7ff6165c657f]
+	chromedriver!(No symbol) [0x7ff6165c4cb3]
+	chromedriver!(No symbol) [0x7ff6165c447b]
+	chromedriver!(No symbol) [0x7ff6165c4131]
+	chromedriver!(No symbol) [0x7ff6165c1e01]
+	chromedriver!(No symbol) [0x7ff6165c2562]
+	chromedriver!(No symbol) [0x7ff6165dbbe6]
+	chromedriver!(No symbol) [0x7ff6166801c4]
+	chromedriver!(No symbol) [0x7ff61665a3ca]
+	chromedriver!(No symbol) [0x7ff61667f39b]
+	chromedriver!(No symbol) [0x7ff61662401c]
+	chromedriver!(No symbol) [0x7ff616624f43]
+	chromedriver!GetHandleVerifier [0x7ff617077591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff617071902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff617097115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff616ab1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff616aba82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff616a9d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff616a9d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff616a81447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa0a6f7374+14]
+	ntdll!RtlUserThreadStart [0x7ffa0a83cc91+21]
+
+2026-06-29 20:24:11,969 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-29 20:24:11,972 - INFO - Added job "job" to job store "default"
+2026-06-29 20:24:11,972 - INFO - Scheduler started
+2026-06-29 20:35:11,010 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-06-29 20:35:11,012 - INFO - Added job "job" to job store "default"
+2026-06-29 20:35:11,012 - INFO - Scheduler started
+2026-06-29 20:35:21,022 - INFO - Running job "job (trigger: interval[0:00:10], next run at: 2026-06-29 20:35:21 PKT)" (scheduled at 2026-06-29 20:35:21.009963+05:00)
+2026-06-29 20:35:21,023 - INFO - Scraper started
+2026-06-29 20:35:21,053 - INFO - ====== WebDriver manager ======
+2026-06-29 20:35:23,946 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-29 20:35:31,017 - WARNING - Execution of job "job (trigger: interval[0:00:10], next run at: 2026-06-29 20:35:31 PKT)" skipped: maximum number of running instances reached (1)
+2026-06-29 20:35:41,018 - WARNING - Execution of job "job (trigger: interval[0:00:10], next run at: 2026-06-29 20:35:41 PKT)" skipped: maximum number of running instances reached (1)
+2026-06-29 20:35:51,014 - WARNING - Execution of job "job (trigger: interval[0:00:10], next run at: 2026-06-29 20:35:51 PKT)" skipped: maximum number of running instances reached (1)
+2026-06-29 20:35:55,835 - INFO - Scraper finished successfully
+2026-06-29 20:35:55,836 - INFO - Job "job (trigger: interval[0:00:10], next run at: 2026-06-29 20:36:01 PKT)" executed successfully
+2026-06-29 20:36:01,017 - INFO - Running job "job (trigger: interval[0:00:10], next run at: 2026-06-29 20:36:11 PKT)" (scheduled at 2026-06-29 20:36:01.009963+05:00)
+2026-06-29 20:36:01,017 - INFO - Scraper started
+2026-06-29 20:36:01,018 - INFO - ====== WebDriver manager ======
+2026-06-29 20:36:04,321 - INFO - Driver [C:\Users\nimra\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win64/chromedriver.exe] found in cache by browser version
