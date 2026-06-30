@@ -2,7 +2,7 @@ import os
 import requests
 from tenacity import retry, stop_after_attempt, wait_fixed
 
-
+# PDF Downloader with retry mechanism, Retries up to 3 times with 3 seconds delay if failed
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(3))
 def download_pdf(url, folder, filename):
 
@@ -11,7 +11,8 @@ def download_pdf(url, folder, filename):
 
     os.makedirs(folder, exist_ok=True)
     path = os.path.join(folder, filename)
-
+    
+    # If file already exists, avoid re-downloading (idempotency)
     if os.path.exists(path):
         return path
 

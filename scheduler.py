@@ -8,6 +8,8 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+
+# Create APScheduler instance
 scheduler = BlockingScheduler()
 
 def job():
@@ -18,6 +20,8 @@ def job():
     except Exception as e:
         logging.error(f"Scraper failed: {str(e)}")
 
+# Schedule job using CRON expression
+# This runs the scraper daily at 2:00 AM
 scheduler.add_job(job, "cron", hour=2, minute=0)
 
 print("Scheduler started...")
