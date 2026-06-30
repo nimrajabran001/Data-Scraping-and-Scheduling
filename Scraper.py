@@ -1,6 +1,8 @@
 import os
 import hashlib
 from datetime import datetime
+import time
+
 # updated from Nimra branch for PR
 
 from selenium import webdriver
@@ -14,6 +16,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from storage import load_data, save_data
 from downloader import download_pdf
 
+# Robots.txt checked manually before scraping
 URL = "https://www.peshawarhighcourt.gov.pk/PHCCMS/reportedJudgments.php?action=search"
 
 
@@ -44,6 +47,8 @@ def run_scraper():
         new_records = []
 
         for row in rows:
+            # respectful delay to avoid server overload
+            time.sleep(1)
             cols = row.find_elements(By.TAG_NAME, "td")
 
             if len(cols) < 8:
