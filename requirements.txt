@@ -4,3 +4,12 @@ requests
 apscheduler
 tenacity
 beautifulsoup4
+sentence-transformers==3.0.1
+
+google-auth==2.33.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+google-api-python-client==2.143.0
+tqdm==4.66.5
+weaviate-client==4.7.1
+ollama==0.3.3
