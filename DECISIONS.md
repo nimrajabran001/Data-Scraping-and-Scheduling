@@ -1,39 +1,45 @@
 # DECISIONS.md
 
-## 1. JSON Schema (judgments.json)
+## 1. Data Schema (judgments.json)
 
-Each record contains:
+Each record in the dataset follows the JSON structure below:
 
-- serial_number (string)
-- case (string)
-- remarks (string)
-- other_citation (string)
-- phc_neutral_citation (string)
-- decision_date (string)
-- sc_status (string)
-- category (string)
-- scraped_at (string)
-- id (string)
-- pdf_path (string)
----
+serial_number (string) — Case serial number
+case (string) — Case title or name
+remarks (string) — Additional notes or remarks
+other_citation (string) — Alternative citation reference
+phc_neutral_citation (string) — Primary unique citation identifier
+decision_date (string) — Date of judgment/decision
+sc_status (string) — Supreme Court status indicator
+category (string) — Case category or classification
+scraped_at (string) — Timestamp of scraping
+id (string) — Unique internal identifier
+pdf_path (string) — Local or stored path of the PDF file
+## 2. Idempotency (Duplicate Prevention)
 
-## 2. Idempotency
-Duplicate prevention is handled using:
-- phc_neutral_citation as unique key
+Duplicate records are prevented using:
 
----
+Primary uniqueness key: phc_neutral_citation
+
+This ensures that each judgment is stored only once, even if scraped multiple times.
 
 ## 3. Scheduling
-APScheduler is used for automated scraping.
 
----
+Automated scraping is handled using:
 
-## 4. Site Etiquette
-- Added time.sleep(1) between requests
-- Checked robots.txt before scraping
-- Avoid aggressive requests
+APScheduler for periodic and scheduled execution of scraping tasks
 
----
+This ensures continuous and controlled data collection without manual intervention.
 
-## 5. Data Storage
-All data stored in structured JSON format.
+## 4. Site Etiquette & Responsible Scraping
+
+To ensure ethical and safe scraping:
+
+A delay of time.sleep(1) is applied between requests
+robots.txt is checked before initiating scraping
+Request rate is kept low to avoid server overload
+No aggressive or parallel request flooding is used
+## 5. Data Storage Strategy
+All scraped data is stored in structured JSON format
+Each record is validated before saving
+Data is kept consistent for easy querying, processing, and reuse
