@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Data Scraping and Scheduling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/15fea2bfee5abb637c84af631f9a3fd5.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/1976008c346bf96dd76cbaa4fb898a4e.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/1eda0f1c7d61a8bf57b373c7c1cb85b8.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/2132c636ba513114923a05638eac7e06.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/37e1385c07f08ac78b012eaefa350688.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/3f294a1cf7f997d361fbb58d5a99a79e.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/40255be4d9bd000404c1b717377df76e.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/4fcafed7ccea3c607a704aba8ef77ff8.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/57666a5c7d8f57ac18ec5183364f23a4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/5d98354c33394b6f69abb49c193817f6.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/5faf538a56c0b0907a7c56870359a13f.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/5ff1711773b0bdcec6fdf299308928fa.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/61b85abc7258fe3e5ff826126c2505ca.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/734c659a988acd7be10c51907ae0ed0e.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/7369d15eb3568364a4c567a4e41e53bd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/765b8164bbe033a4f55c0019ff356d2b.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/76c84b7a53247b4e21f6c4610b39b345.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/828e138163975afe3aa74966676c4242.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/8c48a34984d643ea13a40e5bc9d57d4f.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/9fed28c0fd2ca6b69318b90ef78577d1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/b07ad4d9569161e7cc539f0fc24ca609.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/ba52a3e2af2b9b7479d3fae30a69b2a3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/d40bc7f5fa71e41df1b0b107e5f7b0e1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/dd2d76e50311b64da311f9e951f551c8.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/markdown/ef0d1b0a99b5596549a1a02bab42b5c4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/chat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/chunker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/drive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/hash_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/pdf_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/prompt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/weaviate_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Pixelpk.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/judgments.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/judgments.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3FuHE5aLxSmYXdCKxMwBBftp6cg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Nimra",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="" />
+      <created>1782917930536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782917930536</updated>
+      <workItem from="1782917930540" duration="448000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
