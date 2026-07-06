@@ -27,7 +27,11 @@ def search(query: str, limit: int = 5):
                 "decision_date",
                 "pdf_url",
                 "source_url",
-                "serial_number"
+                "serial_number",
+                "summary",
+                "keywords",
+                "legal_issues",
+                "final_decision"
             ]
         )
         .with_near_vector(
@@ -113,6 +117,22 @@ def init_schema():
             {
                 "name": "content_hash",
                 "dataType": ["text"]
+            },
+            {
+                "name": "summary",
+                "dataType": ["text"]
+            },
+            {
+                "name": "keywords",
+                "dataType": ["text"]
+            },
+            {
+                "name": "legal_issues",
+                "dataType": ["text"]
+            },
+            {
+                "name": "final_decision",
+                "dataType": ["text"]
             }
 
         ]
@@ -184,14 +204,27 @@ def batch_insert(records):
                 record["chunk_index"]
             )
 
-            # Extra safety against duplicate inserts
+            # Skip duplicate chunks
             if chunk_exists(
-                record["document_id"],
-                record["chunk_index"]
+                    record["document_id"],
+                    record["chunk_index"]
             ):
                 continue
 
             vector = record.pop("vector")
+
+            # Ensure Stage 3 metadata fields exist
+            record.setdefault("summary", "")
+            record.setdefault("keywords", "")
+            record.setdefault("legal_issues", "")
+            record.setdefault("final_decision", "")
+            record.setdefault("category", "")
+            record.setdefault("remarks", "")
+            record.setdefault("citation", "")
+            record.setdefault("decision_date", "")
+            record.setdefault("source_url", "")
+            record.setdefault("pdf_url", "")
+            record.setdefault("serial_number", "")
 
             batch.add_data_object(
                 data_object=record,

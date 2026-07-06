@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "category": "keyword",
+        "question": "murder",
+        "expected_answer": "Retrieve murder-related criminal judgments, primarily Syed Mubarak Shah Vs. The State.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 2,
+        "category": "citation",
+        "question": "2026 PHC 3823",
+        "expected_answer": "Retrieve the Syed Mubarak Shah judgment.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 3,
+        "category": "case_number",
+        "question": "RFA No. 263-A of 2023",
+        "expected_answer": "Retrieve the surety bond judgment.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 4,
+        "category": "summary",
+        "question": "Summarize the surety bond judgment.",
+        "expected_answer": "Summary explaining liability of sureties and Section 145 CPC.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 5,
+        "category": "section",
+        "question": "Section 145 CPC",
+        "expected_answer": "Retrieve judgment discussing liability of sureties before Court.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 6,
+        "category": "act",
+        "question": "Contract Act Section 128",
+        "expected_answer": "Retrieve discussion on co-extensive liability of sureties.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 7,
+        "category": "judge",
+        "question": "Who decided 2026 PHC 4078?",
+        "expected_answer": "Justice Syed Mudasser Ameer.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 8,
+        "category": "date",
+        "question": "Decision on 18-06-2026",
+        "expected_answer": "Retrieve the surety bond judgment.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 9,
+        "category": "semantic",
+        "question": "Can a surety withdraw from a judicial undertaking?",
+        "expected_answer": "No, a judicial surety cannot unilaterally withdraw after acceptance by the Court.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 10,
+        "category": "semantic",
+        "question": "What is the liability of a surety under Section 128?",
+        "expected_answer": "Liability of the surety is co-extensive with the principal debtor.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 11,
+        "category": "keyword",
+        "question": "death sentence",
+        "expected_answer": "Retrieve murder judgment discussing reduction of death sentence.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 12,
+        "category": "semantic",
+        "question": "Why was the death sentence reduced?",
+        "expected_answer": "Because mitigating circumstances existed.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 13,
+        "category": "keyword",
+        "question": "execution proceedings",
+        "expected_answer": "Retrieve judgments discussing execution proceedings.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 14,
+        "category": "semantic",
+        "question": "Judicial surety versus continuing guarantee",
+        "expected_answer": "Judicial surety is different from a continuing commercial guarantee.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 15,
+        "category": "summary",
+        "question": "Summarize the murder judgment.",
+        "expected_answer": "Summary of Syed Mubarak Shah criminal appeal.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 16,
+        "category": "irrelevant",
+        "question": "Who won yesterday's cricket match?",
+        "expected_answer": "Reject as irrelevant.",
+        "expected_case": "",
+        "expected_citation": ""
+    },
+    {
+        "id": 17,
+        "category": "irrelevant",
+        "question": "How do I cook biryani?",
+        "expected_answer": "Reject as irrelevant.",
+        "expected_case": "",
+        "expected_citation": ""
+    },
+    {
+        "id": 18,
+        "category": "irrelevant",
+        "question": "What is the weather today?",
+        "expected_answer": "Reject as irrelevant.",
+        "expected_case": "",
+        "expected_citation": ""
+    },
+    {
+        "id": 19,
+        "category": "irrelevant",
+        "question": "Explain Python decorators.",
+        "expected_answer": "Reject as irrelevant.",
+        "expected_case": "",
+        "expected_citation": ""
+    },
+    {
+        "id": 20,
+        "category": "irrelevant",
+        "question": "What is Bitcoin?",
+        "expected_answer": "Reject as irrelevant.",
+        "expected_case": "",
+        "expected_citation": ""
+    }
+]

@@ -12,6 +12,11 @@ from rag_api.pdf_utils import (
     pdf_to_markdown,
     read_markdown
 )
+from rag_api.metadata import (
+    generate_metadata,
+    save_metadata
+)
+
 from rag_api.weaviate_db import (
     batch_insert,
     document_exists
@@ -50,9 +55,13 @@ def process_record(record: dict):
 
     saved_hash = record.get("content_hash")
 
+    metadata_path = record.get("metadata_path")
+
     if (
             document_exists(document_id)
             and saved_hash == current_hash
+            and metadata_path
+            and os.path.exists(metadata_path)
     ):
         logger.info(
             f"Skipping unchanged document: {document_id}"
@@ -91,10 +100,49 @@ def process_record(record: dict):
 
             markdown_text, md_path = pdf_to_markdown(pdf_path)
 
-            record["markdown_path"] = md_path.replace("\\", "/")
+            record["markdown_path"] = (
+                md_path.replace("\\", "/")
+            )
 
-            logger.info(f"Markdown created: {md_path}")
+            logger.info(
+                f"Markdown created: {md_path}"
+            )
 
+        # ---------------------------------------------------
+        # Metadata
+        # ---------------------------------------------------
+
+        metadata_path = record.get("metadata_path")
+        metadata = {}
+
+        if metadata_path and os.path.exists(metadata_path):
+            with open(metadata_path, "r", encoding="utf-8") as f:
+                metadata = json.load(f)
+
+        # if metadata_path and os.path.exists(metadata_path):
+        #
+        #     logger.info("Using existing metadata")
+
+        else:
+
+            metadata = generate_metadata(
+                record,
+                markdown_text
+            )
+
+            metadata_path = save_metadata(
+                metadata
+            )
+
+            record["metadata_path"] = (
+                metadata_path.replace("\\", "/")
+            )
+
+            logger.info(
+                f"Metadata created: {metadata_path}"
+            )
+            #optional
+            return 1
         # ---------------------------------------------------
         # Google Drive
         # ---------------------------------------------------
@@ -177,6 +225,33 @@ def process_record(record: dict):
                     ""
                 ),
 
+                # ---------- NEW ----------
+
+                "summary": metadata.get(
+                    "summary",
+                    ""
+                ),
+
+                "keywords": ", ".join(
+                    metadata.get(
+                        "keywords",
+                        []
+                    )
+                ),
+
+                "legal_issues": ", ".join(
+                    metadata.get(
+                        "legal_issues",
+                        []
+                    )
+                ),
+
+                "final_decision": metadata.get(
+                    "final_decision",
+                    ""
+                ),
+
+                # -------------------------
                 "document_id": document_id,
 
                 "chunk_index": chunk_index,

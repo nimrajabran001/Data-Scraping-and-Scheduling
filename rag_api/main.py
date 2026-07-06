@@ -7,6 +7,8 @@ from rag_api.pipeline import run_ingestion
 from rag_api.weaviate_db import init_schema
 from rag_api.chat import ask
 
+from rag_api.hybrid_search import hybrid_search
+
 
 # -------------------------------------------------
 # Startup
@@ -126,6 +128,28 @@ async def chat(request: ChatRequest):
         )
 
         return result
+
+    except Exception as e:
+
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+@app.get("/hybrid")
+async def hybrid(query: str, top_k: int = 5):
+
+    try:
+
+        results = hybrid_search(
+            query=query,
+            limit=top_k
+        )
+
+        return {
+            "query": query,
+            "results": results
+        }
 
     except Exception as e:
 

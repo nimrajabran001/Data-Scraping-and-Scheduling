@@ -3,64 +3,81 @@ import ollama
 from rag_api.config import LLM_MODEL
 from rag_api.prompt import SYSTEM_PROMPT
 from rag_api.weaviate_db import search
-
+from rag_api.hybrid_search import hybrid_search
+from rag_api.query_classifier import classify_query
+from rag_api.hybrid_search import (
+    hybrid_search,
+    keyword_search
+)
 
 def build_context(results):
-    """
-    Build LLM context and collect unique citations.
-    """
 
     context = []
+
     citations = []
+
     seen = set()
 
     for i, item in enumerate(results, start=1):
 
-        context.append(
-f"""
+        context.append(f"""
 Document {i}
 
 Case:
-{item.get("case", "")}
+{item.get("case","")}
 
-Neutral Citation:
-{item.get("citation", "")}
+Citation:
+{item.get("citation","")}
 
 Decision Date:
-{item.get("decision_date", "")}
+{item.get("decision_date","")}
+
+Summary:
+{item.get("summary","")}
+
+Keywords:
+{item.get("keywords","")}
+
+Legal Issues:
+{item.get("legal_issues","")}
+
+Final Decision:
+{item.get("final_decision","")}
 
 Judgment:
-{item.get("text", "")}
-"""
-        )
+{item.get("text","")}
+""")
 
         key = (
-            item.get("case", ""),
-            item.get("citation", "")
+            item.get("case"),
+            item.get("citation")
         )
 
         if key not in seen:
 
-            seen.add(key)
-
             citations.append({
 
-                "case": item.get("case", ""),
+                "case": item.get("case",""),
 
-                "citation": item.get("citation", ""),
+                "citation": item.get("citation",""),
 
-                "decision_date": item.get("decision_date", ""),
+                "decision_date": item.get("decision_date",""),
 
-                "pdf": item.get("pdf_url", ""),
+                "pdf": item.get("pdf_url",""),
 
-                "source": item.get("source_url", "")
+                "source": item.get("source_url","")
 
             })
 
-    return "\n\n".join(context), citations
+            seen.add(key)
+
+    return "\n".join(context), citations
 
 
 def ask(question: str, top_k: int = 5):
+    query_type = classify_query(question)
+
+    print("Query Type:", query_type)
     """
     Retrieval-Augmented Generation (RAG).
 
@@ -70,7 +87,31 @@ def ask(question: str, top_k: int = 5):
     4. Return grounded answer with citations
     """
 
-    results = search(question, top_k)
+
+    # results = search(question, top_k)
+    #
+    # results = hybrid_search(
+    #     question,
+    #     limit=top_k
+    # )
+
+    query_type = classify_query(question)
+
+    print("Query Type:", query_type)
+
+    if query_type in ["citation", "case_number"]:
+
+        results = keyword_search(
+            question,
+            limit=top_k
+        )
+
+    else:
+
+        results = hybrid_search(
+            question,
+            limit=top_k
+        )
 
     if not results:
 
@@ -89,26 +130,47 @@ def ask(question: str, top_k: int = 5):
     context, citations = build_context(results)
 
     user_prompt = f"""
-You have been provided with relevant excerpts from Peshawar High Court judgments.
+    You are an expert legal research assistant.
 
-Answer ONLY using these excerpts.
+    Use ONLY the retrieved judgments.
 
-If the information is insufficient, clearly state that the retrieved judgments do not contain enough information.
+    Never use outside knowledge.
 
-==========================
-{context}
-==========================
+    Never invent facts.
 
-Question:
-{question}
+    If the answer is unavailable in the retrieved judgments, say so.
 
-Requirements:
+    If multiple judgments are retrieved:
 
-- Give a clear legal answer.
-- Do not invent facts.
-- Summarize where appropriate.
-- Mention the relevant case name and neutral citation at the end.
-"""
+    • Summarize each separately.
+    • Do not merge facts from different cases.
+
+    For broad queries like:
+
+    murder
+    contract
+    bail
+
+    summarize the relevant judgments.
+
+    ==========================
+    {context}
+    ==========================
+
+    Question:
+
+    {question}
+
+    Return:
+
+    1. Direct answer
+
+    2. Supporting reasoning
+
+    3. Case names
+
+    4. Neutral citations
+    """
 
     response = ollama.chat(
 
