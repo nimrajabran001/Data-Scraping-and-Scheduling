@@ -23,6 +23,7 @@ from rag_api.weaviate_db import (
 )
 
 from rag_api.hash_utils import calculate_record_hash
+from rag_api.citation_utils import normalize_citation
 
 logging.basicConfig(
     level=logging.INFO,
@@ -30,6 +31,11 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
+
+# Default court label for this corpus. If you ever ingest a second court
+# into the same index, set this per-record instead (e.g. from a "court"
+# key already present in your Stage 1 JSON).
+DEFAULT_COURT = "Peshawar High Court"
 
 
 def process_record(record: dict):
@@ -42,10 +48,6 @@ def process_record(record: dict):
     if not document_id:
         logger.warning("Missing document id")
         return 0
-
-    # ---------------------------------------------------
-    # Skip document if already ingested
-    # ---------------------------------------------------
 
     # ---------------------------------------------------
     # Incremental ingestion
@@ -110,18 +112,25 @@ def process_record(record: dict):
 
         # ---------------------------------------------------
         # Metadata
+        #
+        # FIX (Stage 4): the original code had `return 1` inside this
+        # else-branch, which exited process_record() before Drive
+        # upload / chunking / embedding / insertion ever ran on a
+        # document's FIRST ingestion pass — those steps only happened on
+        # a second run, once metadata_path already existed. Removed the
+        # early return so a single /ingest call fully processes new
+        # documents.
         # ---------------------------------------------------
 
         metadata_path = record.get("metadata_path")
         metadata = {}
 
         if metadata_path and os.path.exists(metadata_path):
+
             with open(metadata_path, "r", encoding="utf-8") as f:
                 metadata = json.load(f)
 
-        # if metadata_path and os.path.exists(metadata_path):
-        #
-        #     logger.info("Using existing metadata")
+            logger.info("Using existing metadata")
 
         else:
 
@@ -141,14 +150,12 @@ def process_record(record: dict):
             logger.info(
                 f"Metadata created: {metadata_path}"
             )
-            #optional
-            return 1
+
         # ---------------------------------------------------
         # Google Drive
         # ---------------------------------------------------
 
         drive_url = record.get("google_drive_url")
-        record["google_drive_url"] = drive_url
 
         if drive_url:
 
@@ -181,6 +188,16 @@ def process_record(record: dict):
             return 0
 
         # ---------------------------------------------------
+        # Stage 4 derived fields
+        # ---------------------------------------------------
+
+        raw_citation = record.get("phc_neutral_citation", "")
+        citation_normalized = normalize_citation(raw_citation) if raw_citation else ""
+
+        judge = metadata.get("judge", "") or metadata.get("bench", "")
+        court = record.get("court", DEFAULT_COURT)
+
+        # ---------------------------------------------------
         # Build Weaviate objects
         # ---------------------------------------------------
 
@@ -208,10 +225,9 @@ def process_record(record: dict):
                     ""
                 ),
 
-                "citation": record.get(
-                    "phc_neutral_citation",
-                    ""
-                ),
+                "citation": raw_citation,
+
+                "citation_normalized": citation_normalized,
 
                 "source_url": record.get(
                     "source_url",
@@ -224,8 +240,6 @@ def process_record(record: dict):
                     "serial_number",
                     ""
                 ),
-
-                # ---------- NEW ----------
 
                 "summary": metadata.get(
                     "summary",
@@ -251,7 +265,10 @@ def process_record(record: dict):
                     ""
                 ),
 
-                # -------------------------
+                "judge": judge,
+
+                "court": court,
+
                 "document_id": document_id,
 
                 "chunk_index": chunk_index,

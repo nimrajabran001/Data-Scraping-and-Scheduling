@@ -13,3 +13,30 @@ google-api-python-client==2.143.0
 tqdm==4.66.5
 weaviate-client==4.7.1
 ollama==0.3.3
+
+
+fastapi
+uvicorn[standard]
+pydantic
+
+# LLM
+ollama
+
+# Vector DB
+weaviate-client==3.26.7
+
+# Embeddings / reranking
+sentence-transformers
+torch
+
+# PDF / markdown
+pymupdf
+requests
+
+# Google Drive
+google-auth
+google-auth-oauthlib
+google-api-python-client
+
+# Ingestion progress
+tqdm

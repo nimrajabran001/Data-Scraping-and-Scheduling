@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/rag_api/citation_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/cli_chat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/llm_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/search_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/search_tool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/semantic_search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation.json" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/hybrid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/hybrid_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/query_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/query_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/weaviate_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/weaviate_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,15 +47,56 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Merging NimraDev",
+    "git-widget-placeholder": "NimraDev",
+    "last_opened_file_path": "C:/Data Scraping and Scheduling/Data Scraping and Scheduling/rag_api",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling\rag_api" />
+      <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,10 +113,18 @@
       <updated>1782917930536</updated>
       <workItem from="1782917930540" duration="2013000" />
       <workItem from="1782920458385" duration="3790000" />
+      <workItem from="1783449629764" duration="4358000" />
+      <workItem from="1783582552148" duration="8134000" />
+      <workItem from="1783797023299" duration="1661000" />
+      <workItem from="1783878906316" duration="1743000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$test.coverage" NAME="test Coverage Results" MODIFIED="1783884271811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$Scraper.coverage" NAME="Scraper Coverage Results" MODIFIED="1783359946547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

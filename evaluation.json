@@ -158,5 +158,53 @@
         "expected_answer": "Reject as irrelevant.",
         "expected_case": "",
         "expected_citation": ""
+    },
+    {
+        "id": 21,
+        "category": "case_name",
+        "question": "Shahid Gul vs Ziaullah Wazir",
+        "expected_answer": "Retrieve the surety bond judgment by party names.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 22,
+        "category": "semantic",
+        "question": "Can someone who signed as a guarantor in a court case later refuse to honor that commitment?",
+        "expected_answer": "No — hard paraphrase of the surety-withdrawal question with no shared wording with the judgment text.",
+        "expected_case": "RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another",
+        "expected_citation": "2026 PHC 4078"
+    },
+    {
+        "id": 23,
+        "category": "semantic",
+        "question": "Was the accused's sentence lowered because of circumstances that made the crime less severe?",
+        "expected_answer": "Hard paraphrase of the death-sentence-reduction question, no shared wording.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 24,
+        "category": "citation",
+        "question": "2026PHC3823",
+        "expected_answer": "Same judgment as #2, no spaces — tests citation normalization.",
+        "expected_case": "Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State",
+        "expected_citation": "2026 PHC 3823"
+    },
+    {
+        "id": 25,
+        "category": "irrelevant",
+        "question": "What does the First Amendment of the US Constitution protect?",
+        "expected_answer": "Reject as irrelevant — legal-sounding phrasing but wrong jurisdiction, not covered by this PHC corpus.",
+        "expected_case": "",
+        "expected_citation": ""
+    },
+    {
+        "id": 26,
+        "category": "keyword",
+        "question": "bail",
+        "expected_answer": "Very short/ambiguous single-word query — records how the classifier and each strategy handle minimal input.",
+        "expected_case": "",
+        "expected_citation": ""
     }
 ]
