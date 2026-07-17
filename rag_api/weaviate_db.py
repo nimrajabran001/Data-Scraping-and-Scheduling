@@ -12,6 +12,10 @@ from rag_api.embeddings import get_embedding
 def search(query: str, limit: int = 5):
     """
     Vector search in Weaviate.
+
+    Kept for backward compatibility with any existing callers. New code
+    should use rag_api.semantic_search.semantic_search instead, which
+    supports court/year/judge filters and returns a normalized `score`.
     """
 
     vector = get_embedding(query)
@@ -24,10 +28,17 @@ def search(query: str, limit: int = 5):
                 "case",
                 "text",
                 "citation",
+                "citation_normalized",
                 "decision_date",
                 "pdf_url",
                 "source_url",
-                "serial_number"
+                "serial_number",
+                "summary",
+                "keywords",
+                "legal_issues",
+                "final_decision",
+                "judge",
+                "court",
             ]
         )
         .with_near_vector(
@@ -41,12 +52,34 @@ def search(query: str, limit: int = 5):
 
     return result["data"]["Get"][CLASS_NAME]
 
+
 client = weaviate.Client(WEAVIATE_URL)
 
 
 def init_schema():
     """
     Create Weaviate schema if it does not already exist.
+
+    Stage 4 additions vs. the original schema:
+      - judge: enables judge-reference queries and judge filters
+        (Section 2 "judge reference", Section 3.2 metadata attachment)
+      - court: enables court filter for multi-court deployments
+        (Section 5.1 tool contract `court` param)
+      - citation_normalized: canonical "<year> <ABBR> <number>" form so
+        "2026 PHC 153" and "2026PHC153" both match in BM25 search
+        (Section 3.1 requirement)
+
+    NOTE: if CLASS_NAME already exists from before this migration, adding
+    properties to `properties` below does nothing automatically — Weaviate
+    does not retroactively alter an existing class. Either:
+      (a) drop and recreate the class (loses existing vectors, requires
+          full re-ingestion), or
+      (b) add the new properties to the existing class via
+          client.schema.property.create(CLASS_NAME, {...}) for each new
+          field, then re-run /ingest so existing documents get values
+          for the new fields.
+    Option (b) is safer for an existing corpus; see the migration snippet
+    at the bottom of this file.
     """
 
     existing = client.schema.get()
@@ -58,6 +91,7 @@ def init_schema():
 
     if CLASS_NAME in classes:
         print("✓ Schema already exists")
+        _ensure_new_properties()
         return
 
     schema = {
@@ -91,6 +125,10 @@ def init_schema():
                 "dataType": ["text"]
             },
             {
+                "name": "citation_normalized",
+                "dataType": ["text"]
+            },
+            {
                 "name": "source_url",
                 "dataType": ["text"]
             },
@@ -113,6 +151,30 @@ def init_schema():
             {
                 "name": "content_hash",
                 "dataType": ["text"]
+            },
+            {
+                "name": "summary",
+                "dataType": ["text"]
+            },
+            {
+                "name": "keywords",
+                "dataType": ["text"]
+            },
+            {
+                "name": "legal_issues",
+                "dataType": ["text"]
+            },
+            {
+                "name": "final_decision",
+                "dataType": ["text"]
+            },
+            {
+                "name": "judge",
+                "dataType": ["text"]
+            },
+            {
+                "name": "court",
+                "dataType": ["text"]
             }
 
         ]
@@ -121,6 +183,28 @@ def init_schema():
     client.schema.create_class(schema)
 
     print("✓ Schema created")
+
+
+def _ensure_new_properties():
+    """
+    For an already-existing class from before this migration: add the
+    Stage 4 properties (judge, court, citation_normalized) if missing,
+    without touching existing data. Safe to call repeatedly.
+    """
+
+    existing_class = client.schema.get(CLASS_NAME)
+    existing_props = {p["name"] for p in existing_class.get("properties", [])}
+
+    new_props = [
+        {"name": "judge", "dataType": ["text"]},
+        {"name": "court", "dataType": ["text"]},
+        {"name": "citation_normalized", "dataType": ["text"]},
+    ]
+
+    for prop in new_props:
+        if prop["name"] not in existing_props:
+            client.schema.property.create(CLASS_NAME, prop)
+            print(f"✓ Added missing property: {prop['name']}")
 
 
 def make_uuid(document_id: str, chunk_index: int):
@@ -184,14 +268,32 @@ def batch_insert(records):
                 record["chunk_index"]
             )
 
-            # Extra safety against duplicate inserts
+            # Skip duplicate chunks
             if chunk_exists(
-                record["document_id"],
-                record["chunk_index"]
+                    record["document_id"],
+                    record["chunk_index"]
             ):
                 continue
 
             vector = record.pop("vector")
+
+            # Ensure Stage 3 metadata fields exist
+            record.setdefault("summary", "")
+            record.setdefault("keywords", "")
+            record.setdefault("legal_issues", "")
+            record.setdefault("final_decision", "")
+            record.setdefault("category", "")
+            record.setdefault("remarks", "")
+            record.setdefault("citation", "")
+            record.setdefault("decision_date", "")
+            record.setdefault("source_url", "")
+            record.setdefault("pdf_url", "")
+            record.setdefault("serial_number", "")
+
+            # Stage 4 fields
+            record.setdefault("judge", "")
+            record.setdefault("court", "")
+            record.setdefault("citation_normalized", "")
 
             batch.add_data_object(
                 data_object=record,

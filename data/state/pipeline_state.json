@@ -1,0 +1,1002 @@
+{
+  "05ffc9cc2ebfa88604b0532c9564056c": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:33:29.795808+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:38.102024+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:33:30.029974+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:38:44.983411+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:38:53.655899+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:39:02.270395+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:39:16.512944+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:39:16.512963+00:00"
+  },
+  "d22e136212ab8d624a96bcf17e50200c": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:39:16.548997+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:42.081239+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:39:17.913534+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:40:37.858465+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:40:39.838281+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:40:40.337248+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:40:46.820355+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:40:46.820389+00:00"
+  },
+  "f8ed468474bbdf3d4fb8e696d552a3d7": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:40:46.899313+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:44.212636+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:40:47.457984+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:04:40.794070+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:04:42.851864+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:04:48.802233+00:00",
+        "error": "Both direct MongoDB and fallback API ingestion failed"
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:40:47.458493+00:00"
+  },
+  "5af44dd1b6b15fa87829159c0511084e": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.174397+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:46.336315+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:09.196822+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:08:07.623164+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:08:10.104739+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:08:16.455322+00:00",
+        "error": "Both direct MongoDB and fallback API ingestion failed"
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:09.196838+00:00"
+  },
+  "9905fed48b4e383aa8a8c5421fe085b3": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.222090+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:48.532852+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:09.246329+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:12:13.392641+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:12:16.311254+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:12:22.762829+00:00",
+        "error": "Both direct MongoDB and fallback API ingestion failed"
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:09.246355+00:00"
+  },
+  "6798063eaf2ad46c4257ae4748bb790a": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.300557+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:51.043151+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:09.339052+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:16:32.500705+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:16:36.179087+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:16:42.228088+00:00",
+        "error": "Both direct MongoDB and fallback API ingestion failed"
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:09.339096+00:00"
+  },
+  "4fcafed7ccea3c607a704aba8ef77ff8": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.368129+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:52.277256+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:09.395553+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:19:59.570191+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:20:03.751769+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:20:09.932287+00:00",
+        "error": "Both direct MongoDB and fallback API ingestion failed"
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:09.395580+00:00"
+  },
+  "ef0d1b0a99b5596549a1a02bab42b5c4": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.415619+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:53.586218+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:09.436213+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:25:31.107622+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:25:35.708334+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:25:42.804804+00:00",
+        "error": "Both direct MongoDB and fallback API ingestion failed"
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:09.436234+00:00"
+  },
+  "1eda0f1c7d61a8bf57b373c7c1cb85b8": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.455804+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:54.830699+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:09.478178+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:09.478209+00:00"
+  },
+  "91b83823c54805bcad7c99cb9a6ec090": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:09.510872+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:57.233856+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:10.089494+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:36:44.235909+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:36:49.486887+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:36:51.482291+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:37:10.520108+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:10.089512+00:00"
+  },
+  "8a222a69f8a6ec7b3a5d32b83a29b465": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:10.110615+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:43:59.795143+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "failed",
+        "timestamp": "2026-07-16T22:42:10.178042+00:00",
+        "error": "markdown_path missing or file not found despite stage marked success previously"
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:40:39.172878+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:40:43.287483+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:40:47.169983+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "pending",
+        "timestamp": null,
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:42:10.178058+00:00"
+  },
+  "2004f4282a9b013d12208213762b6092": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:10.208958+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:01.988176+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:42:10.572978+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:45:33.124895+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:45:37.984462+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:45:40.761503+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:45:51.749299+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:45:51.749314+00:00"
+  },
+  "f238beee0c3a3e0260c428abb6cdecac": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:45:51.843568+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:04.603026+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:45:52.667468+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:48:51.649068+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:48:54.847708+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:48:54.973207+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:49:01.543565+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:49:01.543579+00:00"
+  },
+  "0f71c908789552896ebcdbac7d92cc89": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:49:01.561411+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:07.367328+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:49:02.124870+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:52:07.068529+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:52:13.296254+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:52:13.437067+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:52:31.872656+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:52:31.872686+00:00"
+  },
+  "9fed28c0fd2ca6b69318b90ef78577d1": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:52:31.912478+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:08.743578+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:52:32.470520+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:53:40.810305+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:53:48.641043+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:53:48.816957+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:53:50.178310+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:53:50.178340+00:00"
+  },
+  "15fea2bfee5abb637c84af631f9a3fd5": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:53:50.225083+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:10.781829+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:53:51.289157+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:56:10.429928+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:56:13.282293+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:56:13.513813+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:56:27.764715+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:56:27.764731+00:00"
+  },
+  "62623e544e7ce0ac4fec703168444140": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:56:27.786152+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:22.111424+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:56:28.484163+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:59:30.465096+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:59:33.799936+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:59:33.950944+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:59:49.878531+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T22:59:49.878555+00:00"
+  },
+  "7879eb63dd81573f6dda3ef2adcc9418": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:59:49.898004+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:24.512628+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T22:59:50.254268+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:03:28.712751+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:03:32.465924+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:03:32.584476+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:03:38.679164+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:03:38.679187+00:00"
+  },
+  "765b8164bbe033a4f55c0019ff356d2b": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:03:38.711564+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:25.694129+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:03:39.743064+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:07:56.791380+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:08:01.112090+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:08:05.391144+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:08:09.562880+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:08:09.562898+00:00"
+  },
+  "5d98354c33394b6f69abb49c193817f6": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:08:09.586954+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:26.854686+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:08:10.240325+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:10:00.568019+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:10:02.854617+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:10:02.897612+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:10:06.065683+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:10:06.065704+00:00"
+  },
+  "d40bc7f5fa71e41df1b0b107e5f7b0e1": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:10:06.084820+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:29.296627+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:10:06.355225+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:13:32.973636+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:13:35.399331+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:13:35.512917+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:13:51.982462+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:13:51.982477+00:00"
+  },
+  "9f91d3f74de5faafa56f825ec492bd4a": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:13:52.004531+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:31.844838+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:13:52.553438+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:17:37.929139+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:17:40.440201+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:17:40.481052+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:17:46.505653+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:17:46.505669+00:00"
+  },
+  "6b198cb7d0b8d87e57326b2e2018e154": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:17:46.528855+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:34.142562+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:17:46.760222+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:20:39.731619+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:20:42.496928+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:20:42.622157+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:21:05.753653+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:21:05.753677+00:00"
+  },
+  "734c659a988acd7be10c51907ae0ed0e": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:21:05.774758+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:35.584158+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:21:06.405877+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:25:29.296762+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:25:33.204584+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:25:34.340373+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:25:49.902570+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:25:49.902584+00:00"
+  },
+  "3f294a1cf7f997d361fbb58d5a99a79e": {
+    "stages": {
+      "scraped": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:25:49.921851+00:00",
+        "error": null
+      },
+      "pdf_downloaded": {
+        "status": "success",
+        "timestamp": "2026-07-16T19:44:36.914400+00:00",
+        "error": null
+      },
+      "md_converted": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:25:50.415616+00:00",
+        "error": null
+      },
+      "metadata_prepared": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:28:47.747272+00:00",
+        "error": null
+      },
+      "uploaded_storage": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:28:51.564161+00:00",
+        "error": null
+      },
+      "mongo_ingested": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:28:51.823581+00:00",
+        "error": null
+      },
+      "vector_indexed": {
+        "status": "success",
+        "timestamp": "2026-07-16T23:28:55.569727+00:00",
+        "error": null
+      }
+    },
+    "last_updated": "2026-07-16T23:28:55.569748+00:00"
+  }
+}

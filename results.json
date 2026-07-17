@@ -1,0 +1,230 @@
+{
+  "strategy_results": {
+    "keyword": {
+      "strategy": "keyword",
+      "precision_at_1": 0.8,
+      "precision_at_5": 0.9,
+      "mrr": 0.8375,
+      "avg_latency_ms": 78.2843,
+      "n_queries": 20,
+      "by_category": {
+        "keyword": {
+          "precision_at_1": 0.75,
+          "precision_at_5": 0.75,
+          "mrr": 0.75,
+          "n": 4
+        },
+        "citation": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 2
+        },
+        "case_number": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        },
+        "summary": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 2
+        },
+        "section": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        },
+        "act": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        },
+        "judge": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.25,
+          "n": 1
+        },
+        "date": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.5,
+          "n": 1
+        },
+        "semantic": {
+          "precision_at_1": 0.8333,
+          "precision_at_5": 0.8333,
+          "mrr": 0.8333,
+          "n": 6
+        },
+        "case_name": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        }
+      }
+    },
+    "semantic": {
+      "strategy": "semantic",
+      "precision_at_1": 0.45,
+      "precision_at_5": 0.75,
+      "mrr": 0.5833,
+      "avg_latency_ms": 478.6396,
+      "n_queries": 20,
+      "by_category": {
+        "keyword": {
+          "precision_at_1": 0.5,
+          "precision_at_5": 0.75,
+          "mrr": 0.625,
+          "n": 4
+        },
+        "citation": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.5,
+          "n": 2
+        },
+        "case_number": {
+          "precision_at_1": 0,
+          "precision_at_5": 0,
+          "mrr": 0.0,
+          "n": 1
+        },
+        "summary": {
+          "precision_at_1": 0.5,
+          "precision_at_5": 1,
+          "mrr": 0.75,
+          "n": 2
+        },
+        "section": {
+          "precision_at_1": 0,
+          "precision_at_5": 0,
+          "mrr": 0.0,
+          "n": 1
+        },
+        "act": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        },
+        "judge": {
+          "precision_at_1": 0,
+          "precision_at_5": 0,
+          "mrr": 0.0,
+          "n": 1
+        },
+        "date": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.3333,
+          "n": 1
+        },
+        "semantic": {
+          "precision_at_1": 0.8333,
+          "precision_at_5": 1,
+          "mrr": 0.8889,
+          "n": 6
+        },
+        "case_name": {
+          "precision_at_1": 0,
+          "precision_at_5": 0,
+          "mrr": 0.0,
+          "n": 1
+        }
+      }
+    },
+    "hybrid": {
+      "strategy": "hybrid",
+      "precision_at_1": 0.7,
+      "precision_at_5": 0.9,
+      "mrr": 0.7917,
+      "avg_latency_ms": 184.5662,
+      "n_queries": 20,
+      "by_category": {
+        "keyword": {
+          "precision_at_1": 0.75,
+          "precision_at_5": 0.75,
+          "mrr": 0.75,
+          "n": 4
+        },
+        "citation": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.5,
+          "n": 2
+        },
+        "case_number": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.5,
+          "n": 1
+        },
+        "summary": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 2
+        },
+        "section": {
+          "precision_at_1": 0,
+          "precision_at_5": 1,
+          "mrr": 0.3333,
+          "n": 1
+        },
+        "act": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        },
+        "judge": {
+          "precision_at_1": 0,
+          "precision_at_5": 0,
+          "mrr": 0.0,
+          "n": 1
+        },
+        "date": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        },
+        "semantic": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 6
+        },
+        "case_name": {
+          "precision_at_1": 1,
+          "precision_at_5": 1,
+          "mrr": 1.0,
+          "n": 1
+        }
+      }
+    }
+  },
+  "classifier_results": {
+    "n_irrelevant": 6,
+    "n_relevant": 20,
+    "rejection_rate": 0.8333,
+    "false_positive_rate": 0.0,
+    "false_negatives": [
+      {
+        "query": "What does the First Amendment of the US Constitution protect?",
+        "classified_as": {
+          "relevance": "relevant",
+          "query_type": "relevant"
+        }
+      }
+    ],
+    "false_positives": []
+  }
+}

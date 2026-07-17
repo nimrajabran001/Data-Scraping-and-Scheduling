@@ -1,81 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Data Scraping and Scheduling.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/15fea2bfee5abb637c84af631f9a3fd5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/1976008c346bf96dd76cbaa4fb898a4e.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/1eda0f1c7d61a8bf57b373c7c1cb85b8.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/2132c636ba513114923a05638eac7e06.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/37e1385c07f08ac78b012eaefa350688.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/3f294a1cf7f997d361fbb58d5a99a79e.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/40255be4d9bd000404c1b717377df76e.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/4fcafed7ccea3c607a704aba8ef77ff8.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/57666a5c7d8f57ac18ec5183364f23a4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/5d98354c33394b6f69abb49c193817f6.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/5faf538a56c0b0907a7c56870359a13f.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/5ff1711773b0bdcec6fdf299308928fa.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/61b85abc7258fe3e5ff826126c2505ca.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/734c659a988acd7be10c51907ae0ed0e.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/7369d15eb3568364a4c567a4e41e53bd.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/765b8164bbe033a4f55c0019ff356d2b.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/76c84b7a53247b4e21f6c4610b39b345.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/828e138163975afe3aa74966676c4242.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/8c48a34984d643ea13a40e5bc9d57d4f.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/9fed28c0fd2ca6b69318b90ef78577d1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/b07ad4d9569161e7cc539f0fc24ca609.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/ba52a3e2af2b9b7479d3fae30a69b2a3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/d40bc7f5fa71e41df1b0b107e5f7b0e1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/dd2d76e50311b64da311f9e951f551c8.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/markdown/ef0d1b0a99b5596549a1a02bab42b5c4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/chat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/chunker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/drive.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/embeddings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/hash_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/pdf_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/prompt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/weaviate_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Pixelpk.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/json/judgments.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/judgments.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
-    </list>
+    <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3FuHE5aLxSmYXdCKxMwBBftp6cg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Nimra",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cli_chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mongotest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_s3_connection.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;NimraDev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Data Scraping and Scheduling/Data Scraping and Scheduling&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling" />
+      <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling\rag_api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.cli_chat">
+    <configuration name="Scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_chat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag_api/cli_chat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mongotest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongotest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_s3_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_s3_connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.cli_chat" />
+        <item itemvalue="Python.test_s3_connection" />
+        <item itemvalue="Python.Scraper" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.mongotest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,11 +202,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1782917930536</updated>
-      <workItem from="1782917930540" duration="448000" />
+      <workItem from="1782917930540" duration="2013000" />
+      <workItem from="1782920458385" duration="3790000" />
+      <workItem from="1783449629764" duration="4358000" />
+      <workItem from="1783582552148" duration="8134000" />
+      <workItem from="1783797023299" duration="1661000" />
+      <workItem from="1783878906316" duration="2221000" />
+      <workItem from="1783928908052" duration="600000" />
+      <workItem from="1783979260213" duration="6671000" />
+      <workItem from="1784229163840" duration="14298000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$test.coverage" NAME="test Coverage Results" MODIFIED="1784236451497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$mongotest.coverage" NAME="mongotest Coverage Results" MODIFIED="1784232100355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$test_s3_connection.coverage" NAME="test_s3_connection Coverage Results" MODIFIED="1784244773931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$cli_chat.coverage" NAME="cli_chat Coverage Results" MODIFIED="1784248143292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rag_api" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$Scraper.coverage" NAME="Scraper Coverage Results" MODIFIED="1784236524186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
