@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rag_api/mongo_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/s3_storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/state_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_s3_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/15fea2bfee5abb637c84af631f9a3fd5.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/15fea2bfee5abb637c84af631f9a3fd5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/3f294a1cf7f997d361fbb58d5a99a79e.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/3f294a1cf7f997d361fbb58d5a99a79e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/4fcafed7ccea3c607a704aba8ef77ff8.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/4fcafed7ccea3c607a704aba8ef77ff8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/5d98354c33394b6f69abb49c193817f6.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/5d98354c33394b6f69abb49c193817f6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/734c659a988acd7be10c51907ae0ed0e.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/734c659a988acd7be10c51907ae0ed0e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/765b8164bbe033a4f55c0019ff356d2b.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/765b8164bbe033a4f55c0019ff356d2b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/9fed28c0fd2ca6b69318b90ef78577d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/9fed28c0fd2ca6b69318b90ef78577d1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/d40bc7f5fa71e41df1b0b107e5f7b0e1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/d40bc7f5fa71e41df1b0b107e5f7b0e1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/metadata/ef0d1b0a99b5596549a1a02bab42b5c4.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/ef0d1b0a99b5596549a1a02bab42b5c4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/cli_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/cli_chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/llm_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/llm_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/metadata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/results.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,26 +26,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Scraper.executor": "Run",
-    "Python.cli_chat.executor": "Run",
-    "Python.mongotest.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test_s3_connection.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "NimraDev",
-    "last_opened_file_path": "C:/Data Scraping and Scheduling/Data Scraping and Scheduling",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cli_chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mongotest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_s3_connection.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;NimraDev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Data Scraping and Scheduling/Data Scraping and Scheduling&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling" />
@@ -236,7 +210,7 @@
       <workItem from="1783878906316" duration="2221000" />
       <workItem from="1783928908052" duration="600000" />
       <workItem from="1783979260213" duration="6671000" />
-      <workItem from="1784229163840" duration="13956000" />
+      <workItem from="1784229163840" duration="14298000" />
     </task>
     <servers />
   </component>
