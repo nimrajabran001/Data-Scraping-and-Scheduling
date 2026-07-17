@@ -1,15 +1,5 @@
-"""
-Minimal CLI chat frontend for Stage 4.
-
-Run:
-    python cli_chat.py
-
-Type your question. Type 'exit' to quit and save the transcript.
-
-This satisfies Section 9's "minimal CLI or web UI ... Include a short
-session transcript showing tool-call vs no-tool-call turns" requirement:
-every turn is logged to transcript.json with whether a tool was called.
-"""
+from dotenv import load_dotenv
+load_dotenv()
 
 import json
 import sys

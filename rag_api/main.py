@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from contextlib import asynccontextmanager
 from typing import Optional
 
@@ -7,6 +10,7 @@ from pydantic import BaseModel
 from rag_api.pipeline import run_ingestion
 from rag_api.weaviate_db import init_schema
 from rag_api.chat import ask
+# from rag_api.llm_tools import chat_turn
 
 from rag_api.hybrid_search import hybrid_search, keyword_search
 from rag_api.semantic_search import semantic_search
@@ -54,6 +58,13 @@ class IngestRequest(BaseModel):
 class ChatRequest(BaseModel):
     question: str
     top_k: int = 5
+
+# class ChatToolsRequest(BaseModel):
+#     question: str
+#     # Optional prior turns, same shape cli_chat.py accumulates, so a
+#     # caller can maintain multi-turn conversations over HTTP too.
+#     # Each item: {"role": "user"|"assistant"|"tool", "content": str}
+#     history: list[dict] = []
 
 
 class SearchRequest(BaseModel):
@@ -158,6 +169,34 @@ async def chat(request: ChatRequest):
             status_code=500,
             detail=str(e)
         )
+
+
+# @app.post("/chat/tools")
+# async def chat_tools(request: ChatToolsRequest):
+#
+#     try:
+#
+#         messages = list(request.history)
+#         messages.append({"role": "user", "content": request.question})
+#
+#         assistant_text, updated_messages = chat_turn(messages)
+#
+#         tool_called = any(m.get("role") == "tool" for m in updated_messages)
+#
+#         return {
+#             "question": request.question,
+#             "answer": assistant_text,
+#             "tool_called": tool_called,
+#             "history": updated_messages,
+#         }
+#
+#     except Exception as e:
+#
+#         raise HTTPException(
+#             status_code=500,
+#             detail=str(e)
+#         )
+
 
 
 # -------------------------------------------------

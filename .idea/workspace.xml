@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d3b89ed-04c7-4efe-a7eb-a4985f4a79a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rag_api/citation_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/cli_chat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/llm_tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/search_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/search_tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag_api/semantic_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/mongo_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/s3_storage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rag_api/state_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_s3_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluation.json" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/hybrid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/hybrid_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/15fea2bfee5abb637c84af631f9a3fd5.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/15fea2bfee5abb637c84af631f9a3fd5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/3f294a1cf7f997d361fbb58d5a99a79e.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/3f294a1cf7f997d361fbb58d5a99a79e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/4fcafed7ccea3c607a704aba8ef77ff8.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/4fcafed7ccea3c607a704aba8ef77ff8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/5d98354c33394b6f69abb49c193817f6.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/5d98354c33394b6f69abb49c193817f6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/734c659a988acd7be10c51907ae0ed0e.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/734c659a988acd7be10c51907ae0ed0e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/765b8164bbe033a4f55c0019ff356d2b.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/765b8164bbe033a4f55c0019ff356d2b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/9fed28c0fd2ca6b69318b90ef78577d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/9fed28c0fd2ca6b69318b90ef78577d1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/d40bc7f5fa71e41df1b0b107e5f7b0e1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/d40bc7f5fa71e41df1b0b107e5f7b0e1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/metadata/ef0d1b0a99b5596549a1a02bab42b5c4.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/metadata/ef0d1b0a99b5596549a1a02bab42b5c4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/cli_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/cli_chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/llm_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/llm_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rag_api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_api/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/metadata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rag_api/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/query_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/query_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rag_api/weaviate_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_api/weaviate_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,25 +56,104 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Scraper.executor": "Run",
+    "Python.cli_chat.executor": "Run",
+    "Python.mongotest.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.test_s3_connection.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "NimraDev",
-    "last_opened_file_path": "C:/Data Scraping and Scheduling/Data Scraping and Scheduling/rag_api",
+    "last_opened_file_path": "C:/Data Scraping and Scheduling/Data Scraping and Scheduling",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling\rag_api" />
       <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling" />
+      <recent name="C:\Data Scraping and Scheduling\Data Scraping and Scheduling\rag_api" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.cli_chat">
+    <configuration name="Scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_chat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag_api/cli_chat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mongotest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongotest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data Scraping and Scheduling" />
       <option name="ENV_FILES" value="" />
@@ -91,9 +179,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_s3_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Scraping and Scheduling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_s3_connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cli_chat" />
+        <item itemvalue="Python.test_s3_connection" />
+        <item itemvalue="Python.Scraper" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.mongotest" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +233,10 @@
       <workItem from="1783449629764" duration="4358000" />
       <workItem from="1783582552148" duration="8134000" />
       <workItem from="1783797023299" duration="1661000" />
-      <workItem from="1783878906316" duration="1743000" />
+      <workItem from="1783878906316" duration="2221000" />
+      <workItem from="1783928908052" duration="600000" />
+      <workItem from="1783979260213" duration="6671000" />
+      <workItem from="1784229163840" duration="13956000" />
     </task>
     <servers />
   </component>
@@ -124,7 +244,10 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$test.coverage" NAME="test Coverage Results" MODIFIED="1783884271811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$Scraper.coverage" NAME="Scraper Coverage Results" MODIFIED="1783359946547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$test.coverage" NAME="test Coverage Results" MODIFIED="1784236451497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$mongotest.coverage" NAME="mongotest Coverage Results" MODIFIED="1784232100355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$test_s3_connection.coverage" NAME="test_s3_connection Coverage Results" MODIFIED="1784244773931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$cli_chat.coverage" NAME="cli_chat Coverage Results" MODIFIED="1784248143292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rag_api" />
+    <SUITE FILE_PATH="coverage/Data_Scraping_and_Scheduling$Scraper.coverage" NAME="Scraper Coverage Results" MODIFIED="1784236524186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

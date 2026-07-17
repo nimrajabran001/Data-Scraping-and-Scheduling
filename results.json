@@ -5,7 +5,7 @@
       "precision_at_1": 0.8,
       "precision_at_5": 0.9,
       "mrr": 0.8375,
-      "avg_latency_ms": 64.1891,
+      "avg_latency_ms": 78.2843,
       "n_queries": 20,
       "by_category": {
         "keyword": {
@@ -75,7 +75,7 @@
       "precision_at_1": 0.45,
       "precision_at_5": 0.75,
       "mrr": 0.5833,
-      "avg_latency_ms": 403.6976,
+      "avg_latency_ms": 478.6396,
       "n_queries": 20,
       "by_category": {
         "keyword": {
@@ -145,7 +145,7 @@
       "precision_at_1": 0.7,
       "precision_at_5": 0.9,
       "mrr": 0.7917,
-      "avg_latency_ms": 142.5358,
+      "avg_latency_ms": 184.5662,
       "n_queries": 20,
       "by_category": {
         "keyword": {

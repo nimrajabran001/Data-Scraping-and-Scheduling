@@ -91,7 +91,15 @@ Judgment:
 
         text = clean_json_response(text)
 
-        metadata = json.loads(text)
+        try:
+            metadata = json.loads(text)
+        except json.JSONDecodeError:
+            # phi3:mini frequently emits raw newlines/tabs inside JSON
+            # string values (e.g. multi-line summaries) instead of
+            # escaping them as \n. That's invalid strict JSON but is
+            # otherwise perfectly parseable -- don't throw away an
+            # entire correct extraction over one unescaped character.
+            metadata = json.loads(text, strict=False)
 
     except Exception as e:
 
